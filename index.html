@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CSS INTERVIEW QUESTIONS AND ANSWERS (DAY 3)</h1>
+    <ol>
+        <li>
+            <h3>Replicate the button on Masthead of PrepBytes</h3>
+    <div class="navbar">
+        <div class="icon">
+      
+        </div>
+        <div class="text">
+          <div class="pb">PrepBytes</div>
+          <div class="sup">A collegeDekho Company</div>
+        </div>
+        <div class="buttons">
+          <div><button class="btn1">Login</button></div>
+          <div><button class="btn2">Sign up</button></div>
+        </div>
+        <div class="container1">
+          <div class="child child1">Study Material</div>
+          <div class="child child2">Courses and Programs</div>
+          <div class="child child3">Practice Coding</div>
+          <div class="child child4">Elevation Academy</div>
+          <div class="child child5">Campus Ambassador Program</div>
+        </div>
+    </div>
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li>
+            
+            <h3>Write a text and add any google font</h3>
+            <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </li>
+        <li>
+            <h3>create a box and increase its width on hover , add transition on hover</h3>
+            <div class="wide"></div>
+            <br>
+            <div class="item"></div>
+        </li>
+        <li>
+            <h3>Create a circle using border radius </h3>
+            <div class="cycle"></div>
+        </li>
+        <li>
+            <h3>Write code to show implementation of media queries</h3>
+    <h4>CODE</h4>
+    <pre>
+        .container1{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            margin: 0px;
+        }
+        @media screen and (min-width:360px) and (max-width:650px) {
+            .container1{
+                flex-direction: column;
+            }
+            
+        }
+    </pre>
+        </li>
+        <li>
+            <h3>Write code to show any animation example</h3>
+    <h4>CODE</h4>
+    <pre>
+    }
+    .anime{
+        width: 150px;
+        height: 150px;
+        background-color: aqua;
+        position: relative;
+        animation-name: lion;
+        animation-duration: 4s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes lion {
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 0px;
+            left: 100px;
+            background-color: aquamarine;
+        }
+        50%{
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+        75%{
+            top: 100px;
+            left: 0px;
+            background-color: aquamarine;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+            background-color: aqua;
+        }
+    }
+    </pre>
+    <h4>OUTPUT :</h4>
+    <div class="anime"></div>
+        </li>
+    </ol>
+</body>
+</html>

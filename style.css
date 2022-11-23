@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+}
+.navbar{
+    width: 1350px;
+    height: 80px;
+    
+    background-color: rgb(184, 174, 174);
+    position: absolute;
+    top: 110px;
+    left: 0px;
+}
+
+.pb{
+    height: 50px;
+    width: 150px;      
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0, 183, 255);
+    font-family: roboto;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.sup{
+    width: 150px;
+    font-size: small;
+    position: relative;
+    top: -12px;
+    left: 10px;
+    color: rgb(255, 115, 0);
+    font-family: roboto;
+    font-weight: bold;
+}
+.text{
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-image: url(./favicon.ico);
+    
+    background-repeat: no-repeat;
+    position: relative;
+    top: 25px;
+    left: 45px;
+}
+.buttons{
+    position: absolute;
+    top: 15px;
+    right: 150px;
+    display: flex;
+    flex-direction: row;     
+}
+.btn1{
+    width: 75px;
+    padding: 5px;
+    margin: 10px;
+    border-color: rgb(0, 173, 253);
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(0, 173, 253);
+    cursor: pointer;
+}
+.btn1:hover{
+    color: black;
+}
+.btn2{
+    width: 75px;
+    padding: 5px;
+    margin: 10px;
+    border-color: rgb(0, 173, 253);
+    border-radius: 5px;
+    background-color: rgb(0, 173, 253);
+    color: white;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: black;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    margin: 0px;
+}
+.child{
+    margin: 10px;
+    color: rgb(61, 58, 58);
+    cursor: pointer;
+}
+.child:hover{
+    color: black;
+}
+.text1{
+    font-family: roboto;
+}
+.wide{
+    width: 200px;
+    height: 200px;
+    background-color: orangered;
+    transition: ease-out;
+}
+.wide:hover{
+    width: 400px;
+    
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 1s;
+    
+}
+.item:hover{
+    width: 300px;
+    
+}
+.cycle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(230, 26, 219);
+}
+@media screen and (min-width:360px) and (max-width:650px) {
+    .container1{
+        flex-direction: column;
+    }
+    
+}
+.anime{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: relative;
+    animation-name: lion;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes lion {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 100px;
+        background-color: aquamarine;
+    }
+    50%{
+        top: 100px;
+        left: 100px;
+        background-color: blue;
+    }
+    75%{
+        top: 100px;
+        left: 0px;
+        background-color: aquamarine;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: aqua;
+    }
+}
